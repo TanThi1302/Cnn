@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .result {
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .success {
+            background: #2ecc71;
+        }
+        .error {
+            background: #e74c3c;
+        }
+        .probabilities {
+            margin-top: 10px;
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #3498db;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        {% if image_file %}
+           
+           <!-- -- <img src="{{ url_for('uploaded_file', filename=image_file) }}" alt="Uploaded X-Ray"> -->
+        {% else %}
+            <p style="color: red;">No image available.</p>
+        {% endif %}
+        <div class="result {{ 'success' if result == 'Normal' else 'error' }}">
+            The X-ray image is predicted as: {{ result }}
+        </div>
+        <div class="probabilities">
+            <p>Probability of Normal: {{ "%.3f"|format(prob_normal) }}%</p>
+            <p>Probability of Pneumonia: {{ "%.3f"|format(prob_pneumonia) }}%</p>
+        </div>
+        <a href="/">Upload another image</a>
+    </div>
+</body>
+</html>

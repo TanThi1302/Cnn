@@ -1,0 +1,17 @@
+Epoch 1/15, Loss: 0.0864, Train Accuracy: 96.62%, Test Accuracy: 77.73%, Time: 172.33 seconds
+Epoch 2/15, Loss: 0.0859, Train Accuracy: 96.72%, Test Accuracy: 75.55%, Time: 154.02 seconds
+Epoch 3/15, Loss: 0.0876, Train Accuracy: 96.54%, Test Accuracy: 78.13%, Time: 156.09 seconds
+Epoch 4/15, Loss: 0.0816, Train Accuracy: 96.79%, Test Accuracy: 76.54%, Time: 159.66 seconds
+Epoch 5/15, Loss: 0.0840, Train Accuracy: 97.11%, Test Accuracy: 77.34%, Time: 144.27 seconds
+Epoch 6/15, Loss: 0.0768, Train Accuracy: 97.01%, Test Accuracy: 76.34%, Time: 132.05 seconds
+Epoch 7/15, Loss: 0.0770, Train Accuracy: 96.72%, Test Accuracy: 76.54%, Time: 131.25 seconds
+Epoch 8/15, Loss: 0.0790, Train Accuracy: 96.79%, Test Accuracy: 76.54%, Time: 132.74 seconds
+Epoch 9/15, Loss: 0.0798, Train Accuracy: 97.08%, Test Accuracy: 76.54%, Time: 131.65 seconds
+Epoch 10/15, Loss: 0.0737, Train Accuracy: 97.08%, Test Accuracy: 76.54%, Time: 132.62 seconds
+Epoch 11/15, Loss: 0.0767, Train Accuracy: 96.79%, Test Accuracy: 76.54%, Time: 131.97 seconds
+Epoch 12/15, Loss: 0.0751, Train Accuracy: 97.15%, Test Accuracy: 76.54%, Time: 131.18 seconds
+Epoch 13/15, Loss: 0.0739, Train Accuracy: 96.97%, Test Accuracy: 76.54%, Time: 131.63 seconds
+Epoch 14/15, Loss: 0.0758, Train Accuracy: 97.04%, Test Accuracy: 76.54%, Time: 131.48 seconds
+Epoch 15/15, Loss: 0.0772, Train Accuracy: 96.58%, Test Accuracy: 76.54%, Time: 131.45 seconds
+
+Total training time: 2104.39 seconds
